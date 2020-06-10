@@ -360,3 +360,6 @@ a {
 #testimonials .testimonial-website {
     color: var(--clr-link);
 }
+#testimonials .swiper-pagination-bullet {
+    background-color: white;
+}
