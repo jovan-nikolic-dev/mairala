@@ -5,6 +5,9 @@
     --clr-grey-brown: #7b6c63;
     --clr-grey-brown-dark: #26231f;
     --clr-light-grey: #f5f5f5;
+    --clr-dark-bg: #1a1a1a;
+    --clr-dark-bg-text: #929292;
+    --clr-link: #28bbe5;
 }
 /* reset */
 * {
@@ -50,6 +53,12 @@
     margin: auto;
     padding: 0 1rem;
 }
+.container-sm {
+    max-width: 720px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
 
     /* headings */
 
@@ -277,6 +286,9 @@ a {
     justify-content: center;
 }
 
+#team {
+    padding-bottom: 4rem;
+}
 #team .wrapper {
     display: flex;
     justify-content: center;
@@ -331,4 +343,20 @@ a {
     transform: scale(.8,1);
     font-size: .65rem;
     letter-spacing: .2em;
+}
+
+#testimonials {
+    border: 1px solid green;
+    padding: 3.5rem 0;
+}
+#testimonials .heading {
+    color: #fff;
+}
+#testimonials, 
+#testimonials .swiper-slide {
+    background-color: var(--clr-dark-bg);
+    color: var(--clr-dark-bg-text);
+}
+#testimonials .testimonial-website {
+    color: var(--clr-link);
 }

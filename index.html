@@ -110,7 +110,7 @@
         <!-- SWIPER START -->
         <!-- Swiper HTML Layout -->
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper-1">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -147,7 +147,7 @@
     
         <!-- SWIPER START -->
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper-1">
         <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -211,8 +211,60 @@
                         <p class="text-center member-title text-bold">creative director</p>
                     </div>
                 </div>
+            </div> <!-- .members -->
+        </div> <!-- .container -->
+    </section> <!-- #team -->
+
+    <section id="testimonials">
+        <h3 class="heading section-heading section-heading-small text-center text-bold">what our clients are saying</h3>
+
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="container-sm">
+                        <p class="testimonial-review">
+                            "It was a pleasure to work with Imran. He is very dedicated and professional. He worked very hard to satisfy our requirements and the communication was great."
+                        </p>
+                        <p class="testimonial-name">John Doe</p>
+                        <a href="www.google.com" class="testimonial-website">www.yourwebsite.zt</a>
+                    </div>
+                </div>
+
+                <!-- replace with the first slide -->
+                <div class="swiper-slide">
+                    <div class="container-sm">
+                        <p class="testimonial-review">
+                            "It was a pleasure to work with Imran. He is very dedicated and professional. He worked very hard to satisfy our requirements and the communication was great."
+                        </p>
+                        <p class="testimonial-name">John Doe</p>
+                        <a href="www.google.com" class="testimonial-website">www.yourwebsite.zt</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-sm">
+                        <p class="testimonial-review">
+                            "It was a pleasure to work with Imran. He is very dedicated and professional. He worked very hard to satisfy our requirements and the communication was great."
+                        </p>
+                        <p class="testimonial-name">John Doe</p>
+                        <a href="www.google.com" class="testimonial-website">www.yourwebsite.zt</a>
+                    </div>
+                </div>
+                
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pagination-2"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
+
     </section>
 
     <section id="blog">
@@ -243,7 +295,7 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!-- Initialize Swiper in JS -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-1', {
           slidesPerView: 4,
           spaceBetween: 0,
           pagination: {
@@ -251,6 +303,31 @@
             clickable: true,
           },
         });
+    </script>
+
+    <script>
+        var mySwiper = new Swiper ('.swiper-2', {
+        slidesPerView: 1,
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+    
+        // If we need pagination
+        pagination: {
+            el: '.pagination-2',
+        },
+    
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+    
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        })
     </script>
 
 
