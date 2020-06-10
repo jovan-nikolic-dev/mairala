@@ -434,6 +434,14 @@ a {
     background-color: var(--clr-footer-bg);
     padding: 2.5rem 0;
 }
-#main-footer .footer-info .container > * {
+.footer-info .wrapper {
+    display: flex;
+}
+.footer-info .wrapper > * {
     width: 25%;
+    padding-right: 1.5rem;
+}
+.footer-info .footer-info-main > *,
+.footer-info .footer-info-main ~ * > * {
+    margin-bottom: 1.5rem; 
 }
