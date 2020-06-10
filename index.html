@@ -309,22 +309,65 @@
                             <h3 class="heading heading-section heading-section-small">recent posts</h3>
                             <div class="post">
                                 <p class="date">march 30, 2014</p>
-                                <p>Duis autem vel eum iriure dolor</p>
+                                <p class="post-text">Duis autem vel eum iriure dolor</p>
                             </div>
                             <div class="post">
                                 <p class="date">march 30, 2014</p>
-                                <p>Duis autem vel eum iriure dolor</p>
+                                <p class="post-text">Duis autem vel eum iriure dolor</p>
                             </div>
                             <div class="post">
                                 <p class="date">march 30, 2014</p>
-                                <p>Duis autem vel eum iriure dolor</p>
+                                <p class="post-text">Duis autem vel eum iriure dolor</p>
                             </div>
                         </div>
                         <div class="footer-info-feeds">
                             <h3 class="heading heading-section heading-section-small">twitter feeds</h3>
+                            <div class="feed">
+                                <p class="date">about 2 days ago <span class="user">@kristianplatt</span></p>
+                                <p class="post-text">Good work buddy</p>
+                            </div>
+                            <div class="feed">
+                                <p class="date">about 2 days ago <span class="user">@fasteven</span></p>
+                                <p class="post-text">Good work buddy</p>
+                            </div>
+                            <div class="feed">
+                                <p class="date">about 2 days ago <span class="user">@streamer</span></p>
+                                <p class="post-text">Good work buddy</p>
+                            </div>
                         </div>
-                        <div class="footer-info-addres">
+                        <div class="footer-info-address">
                             <h3 class="heading heading-section heading-section-small">our address</h3>
+                            <div class="footer-info-address-text">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi in minima repellat ipsum consequuntur eum vel, molestiae minus doloremque ipsam beatae ex sunt natus dolores officia recusandae voluptate? Dolorum architecto ipsum esse debitis! Cumque iusto nulla odit recusandae esse iure!
+                                </p>
+                            </div>
+                            <div class="footer-info-address-address">
+                                <div class="address-line">
+                                    <div class="address-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>Moonshine St. 14/05 Light Jupiter</p>
+                                    </div>
+                                </div>
+                                <div class="address-line">
+                                    <div class="address-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>+00 (123) 456 78 90</p>
+                                    </div>
+                                </div>
+                                <div class="address-line">
+                                    <div class="address-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>first.last@email.com</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -332,7 +375,7 @@
 
             <div class="footer-copyright">
                 <div class="container">
-
+                    <p class="copyright text-center">&copy;2014 Imran Khan All Rights Reserved</p>
                 </div>
             </div>
         
@@ -344,7 +387,7 @@
     <!-- Initialize Swiper in JS -->
     <script>
         var swiper = new Swiper('.swiper-1', {
-          slidesPerView: 4,
+          slidesPerView: auto,
           spaceBetween: 0,
           pagination: {
             el: '.swiper-pagination',
@@ -359,6 +402,8 @@
         slidesPerView: 1,
         // Optional parameters
         direction: 'horizontal',
+
+        // loop: is not working when slidesPerView is set
         loop: true,
     
         // If we need pagination
