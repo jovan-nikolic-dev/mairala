@@ -31,8 +31,8 @@ https://github.com/nolimits4web/Swiper/blob/master/demos/110-slides-per-view.htm
 
     /* custom rules */
     /* margin: 0px !important; */
-    /* width: 280px !important;  */
-    width: 280px; 
+    width: 280px !important; 
+    /* width: 280px;  */
 }
 
 .swiper-slide:nth-child(1) {

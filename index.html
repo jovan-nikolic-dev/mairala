@@ -268,13 +268,29 @@
     </section>
 
     <section id="blog">
-        <div class="container">
-
+        <div class="container-md">
+            <div class="wrapper">
+                <div class="text-box-primary text-center">
+                    <h2 class="heading section-heading">our blog</h2>
+                    <div class="bottom-line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iure molestias, hic quaerat modi sapiente!</p>
+                </div>
+            </div>
+            <div class="item-grid"></div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="container-sm">
+            <div class="wrapper">
+                <h2 class="heading section-heading">know about us</h2>
+                <input type="text" placeholder="Name *">
+                <input type="email" placeholder="Email *">
+                <textarea name="message" placeholder="Message..."></textarea>
+                <div class="button-container">
+                    <input type="submit" class="btn" value="Submit">
+                </div>
+            </div>
 
         </div>
     </section>
@@ -282,7 +298,10 @@
     <footer id="main-footer">
         <div class="container">
             <div class="footer-info">
-
+                <div class="footer-info-main"></div>
+                <div class="footer-info-recent"></div>
+                <div class="footer-info-feeds"></div>
+                <div class="footer-info-addres"></div>
             </div>
 
             <div class="footer-copyright">
@@ -293,6 +312,7 @@
 
     <!-- Swiper CDN -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <!-- Initialize Swiper in JS -->
     <script>
         var swiper = new Swiper('.swiper-1', {
@@ -305,6 +325,7 @@
         });
     </script>
 
+    <!-- Initialize Swiper in JS -->
     <script>
         var mySwiper = new Swiper ('.swiper-2', {
         slidesPerView: 1,
